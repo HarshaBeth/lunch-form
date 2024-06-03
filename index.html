@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dado Tea Lunch Special</h1>
+
+    <p>
+        <span>Monday through Friday</span> <br>
+        <span>11am - 3pm</span>    <br>
+        <span>Monday through Friday</span>
+    </p>
+    
+    <p>Includes sandwich, snack, and drink</p>
+
+    <form action="" method="post" autocomplete="on">
+        <!-- order info -->
+        <div style="border: 1px solid black; padding-left: 1rem; padding-bottom: 1rem;">
+            <h3>Order Information</h3>
+
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            <br>
+            <br>
+
+            <input type="radio" name="here">
+            <label for="here">Here</label>  <br>
+            <input type="radio" name="here">
+            <label for="here">To Go</label>
+        </div>
+
+        <!-- Sandwich -->
+        <div style="margin-top: 1rem; border: 1px solid black; padding-left: 1rem; padding-bottom: 1rem;">
+            <h3>Sandwiches</h3>
+
+            <span>Monday</span> <br>
+            <input type="radio" name="monday">
+            <label for="monday">Tomato Mozarella</label>    <br>
+            <input type="radio" name="monday">
+            <label for="monday">Chicken Salad</label>
+            
+            <br><br>
+            
+            <span>Tuesday</span> <br>
+            <input type="radio" name="tuesday">
+            <label for="tuesday">Greek Salad Wrap</label>    <br>
+            <input type="radio" name="tuesday">
+            <label for="tuesday">Toto Wrap</label>
+            
+            <br><br>
+
+            <span>Wednesday</span> <br>
+            <input type="radio" name="wed">
+            <label for="wed">Greek Salad Wrap</label>    <br>
+            <input type="radio" name="wed">
+            <label for="wed">Toto Wrap</label>
+            
+            <br><br>
+
+            <span>Thursday</span> <br>
+            <input type="radio" name="thur">
+            <label for="thur">Carrot-Ginger Hummus Wrap</label>    <br>
+            <input type="radio" name="thur">
+            <label for="thur">Egg Salad</label>
+            
+            <br><br>
+
+            <span>Friday</span> <br>
+            <input type="radio" name="fri">
+            <label for="fri">Dado Wrap</label>    <br>
+            <input type="radio" name="fri">
+            <label for="fri">Tuna Salad</label>
+
+            <hr>
+            <input type="checkbox" name="gluten">
+            <label for="gluten">Gluten Free Bread (0.75$ extra)</label>
+        </div>
+
+        <!-- Snack -->
+        <div style="margin-top: 1rem; border: 1px solid black; padding-left: 1rem; padding-bottom: 1rem;">
+            <h3>Snack</h3>
+
+            <span>Snacks</span> <br>
+            <input type="radio" name="snacks">
+            <label for="snacks">Apple</label><br>
+            <input type="radio" name="snacks">
+            <label for="snacks">Banana</label><br>
+            <input type="radio" name="snacks">
+            <label for="snacks">Potato Chips</label><br>
+        </div>
+
+        <!-- Drinks -->
+        <div style="margin-top: 1rem; border: 1px solid black; padding-left: 1rem; padding-bottom: 1rem;">
+            <h3>Drinks</h3>
+            <select name="drinks" id="drinks">
+                <optgroup label="Black Tea">
+                    <option value="">Hot Black Tea - Keemun</option>
+                    <option value="">Hot Black Tea - Decaf Keemun</option>
+                    <option value="">Iced Black Tea - Keemun</option>
+                    <option value="">Iced Black Tea - Decaf Keemun</option>
+                </optgroup>
+                <optgroup label="Green Tea">
+                    <option value="">Hot Green Tea - Sencha</option>
+                    <option value="">Hot Green Tea - Decaf</option>
+                    <option value="">Iced Green Tea - Sencha</option>
+                    <option value="">Iced Green Tea - Decaf</option>
+                </optgroup>
+                <optgroup label="Coffee">
+                    <option value="">Hot Coffee</option>
+                    <option value="">Hot Decaf Coffee</option>
+                    <option value="">Iced Coffee</option>
+                    <option value="">Iced Decaf Coffee</option>
+                </optgroup>
+                <optgroup label="Bubble Tea ($1.50 extra)">
+                    <option value="">Bubble Tea</option>
+                </optgroup>
+            </select>
+            <hr>
+            <input type="checkbox" name="drink">
+            <label for="drink">Large drink ($0.75 extra)</label>
+        </div>
+        
+        <!-- button -->
+        <div style="padding: 2rem; padding-left: 0;">
+            <button type="submit">Place Order</button>
+        </div>
+
+
+    </form>
+</body>
+</html>
